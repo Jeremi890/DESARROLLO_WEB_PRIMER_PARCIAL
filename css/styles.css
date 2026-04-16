@@ -1,0 +1,19 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+/* 1 rem = 10 px */
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    color: #673147;
+}
+
+span{
+    font-size: 2rem;
+    color: yellowgreen;
+}
