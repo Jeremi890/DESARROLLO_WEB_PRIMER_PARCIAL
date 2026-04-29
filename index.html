@@ -8,6 +8,11 @@
     <!-- Navegador -->
     <title>Mi primera página web</title>
     <!-- título de la página -->
+     <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
 <link rel="preload" href="css/styles.css" as="style"/>
 <link href="css/styles.css" rel="stylesheet"/>
 </head>
@@ -20,61 +25,79 @@
     <!-- UTILIZAR UN H1 POR DOCUMENTO -->
      </header>
 
-<nav>
+<div class ="nav-bg">
+<nav class="navegacion-principal contenedor">
 <a href="index.html">INICIO</a>
 <a href="unidades.html">UNIDADES</a>
 <a href="calificaciones.html">CALIFICACIONES</a>
 </nav>
+</div>
 
-   <img src="imagenes/depwebpage.png">
-
-    <section>
+    <section class="hero">
+        <div class ="contenido-hero">
     <p>JEREMI VERA</p>
     <img src="iconos/contactar.svg">
     <p>Guayaquil, Ecuador</p>
+    <a class="boton" href="#">Contactar</a>
+    </div>
     </section>
-    <a href="#">Contactar</a>
+    
 
 
-    <main>
+    <main class="sombra">
     <h2>TECNOLOGÍAS</h2>
     
-    <section>
+    <div class="lenguajes">
+    <section class="lenguaje">
         <!-- si tiene un heading como primer hijo se recomienda hacer un section -->
     <h3>HTML</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    <div class="iconos"> 
+       <img src="iconos/html.svg">
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elite. 
        Etiam feugiat purus vel massa pellentesque iaculis.
     </p>
     </section>
 
-    <section>
+    <section class="lenguaje">
     <h3>CSS</h3>
+     <div class="iconos"> 
+       <img src="iconos/css.svg">
+    </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
        Etiam feugiat purus vel massa pellentesque iaculis.
     </p>
     </section>
  
-    <section>
+    <section class="lenguaje">
     <h3>JAVASCRIPT</h3>
+    <div class="iconos"> 
+       <img src="iconos/java.svg">
+    </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
        Etiam feugiat purus vel massa pellentesque iaculis.
     </p>
     </section>
     
-    <section>
+    <section class="lenguaje">
     <h3>PHP</h3>
+     <div class="iconos"> 
+       <img src="iconos/php.svg">
+    </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
        Etiam feugiat purus vel massa pellentesque iaculis.
     </p>
     </section>
-    
-</main>
+    </div>
+
+
+
     
     <section>
     <h2>CONTACTO</h2>
     
-    <form>
-    <fieldset>
+    <form class="formulario">
+        <fieldset>
         <legend>CONTACTANOS</legend>
         
         <div>
@@ -103,8 +126,7 @@
 
     </fieldset>
     </form>
-
-
+</main>
 
     </section>
     <footer>
